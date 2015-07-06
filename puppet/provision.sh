@@ -26,6 +26,5 @@ sudo -u vagrant gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C2754
 
 echo "Finished installing"
 echo "Enter the box with 'vagrant ssh', then go to the correct dir (/vagrant)"
-echo "Now install rmv etc 'source $HOME/.rvm/scripts/rvm && rvm install 2.1.5 && rvm 2.1.5'"
-echo "And install the gems 'cd /vagrant && gem install bundler && bundle install --system', and run the tests 'time rspec'"
-
+echo "Now run rmv etc 'source $HOME/.rvm/scripts/rvm'"
+echo "And install the gems 'cd /vagrant && gem install bundler && bundle install --system', and run the tests 'bundle exec rspec'"

@@ -1,6 +1,19 @@
 source 'https://rubygems.org'
 
-gem 'rails',        '4.2.3'
+# Dynamically load a Rails version for Travis
+
+rails_version = ENV["RAILS_VERSION"] || "default"
+
+rails = case rails_version
+          when 'default'
+            '>= 4.2.0'
+          else
+            "~> #{rails_version}"
+        end
+
+gem "rails", rails
+
+
 gem 'sass-rails',   '~> 4.0.3'
 gem 'jbuilder',     '~> 2.2'
 

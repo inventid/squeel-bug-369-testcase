@@ -1,9 +1,13 @@
 language: ruby
 cache: bundler
 rvm:
-- 2.0.0
 - 2.1.5
 - 2.2.2
+
+env:
+  - "RAILS_VERSION=4.1.11"
+  - "RAILS_VERSION=4.2.1"
+  - "RAILS_VERSION=4.2.3"
 
 script: bundle exec rspec
 notifications:
