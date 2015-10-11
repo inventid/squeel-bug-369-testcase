@@ -9,6 +9,7 @@ env:
   - "RAILS_VERSION=4.2.1"
   - "RAILS_VERSION=4.2.3"
   - "RAILS_VERSION=4.2.4"
+  - "RAILS_VERSION=4-2-stable"
 
 script: bundle exec rspec
 notifications:
